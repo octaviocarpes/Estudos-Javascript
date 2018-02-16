@@ -11,20 +11,16 @@
   export default{
 
     data(){
-
       return{
         titulo:'Alurapic',
-        fotos:[
-        {
-          url:'http://tudosobrecachorros.com.br/wp-content/uploads/cachorro-independente.jpg',
-          titulo:'imagem'
-        },
-        {
-          url:'http://tudosobrecachorros.com.br/wp-content/uploads/cachorro-independente.jpg',
-          titulo:'imagem'
-        }
-        ]
+        fotos:[ ]
       }
+    },
+    created(){
+      let promise = this.$http.get('http://localhost:3000/v1/fotos');
+      promise
+        .then(res => res.json())
+        .then(fotos => this.fotos = fotos, err => console.log(err));
     }
   }
 </script>
