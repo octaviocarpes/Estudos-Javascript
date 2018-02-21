@@ -1,0 +1,57 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: powderblue;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;    
+}
+
+header{
+ display: flex;
+ justify-content: center;   
+}
+
+header h1{
+    width: 86%;
+}
+
+main{
+    /* width:55%;
+    position: absolute;
+    left:24%; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
+
+.blog{
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    margin:5px;
+}
+
+.blog-img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left:25px;
+    top:12px;
+    align-content: center;
+}
+
+.blog h2{
+    position: relative;
+    text-align: center;
+    bottom:4px;
+}

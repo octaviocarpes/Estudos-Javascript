@@ -12,5 +12,7 @@
   "author": "octavio carpes",
   "license": "ISC",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "workbox-sw": "^2.1.2"
+  }
 }
