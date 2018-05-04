@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-poc",
+  "version": "1.0.0",
+  "description": "a angular poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server"
+  },
+  "author": "Octavio Carpes",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.10"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}

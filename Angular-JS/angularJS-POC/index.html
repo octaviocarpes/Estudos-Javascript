@@ -1,0 +1,14 @@
+<html>
+  <head>
+
+    <style>.active { color: red; font-weight: bold; }</style>
+  </head>
+
+  <body ng-app="helloworld">
+    <a ui-sref="hello" ui-sref-active="active">Hello</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+
+    <ui-view></ui-view>
+    <script src="./dist/app.bundle.js"></script>
+  </body>
+</html>
