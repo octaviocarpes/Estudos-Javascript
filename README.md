@@ -1,2 +1,2 @@
 # JS-Sandbox
-Meus estudos sobre Javascript
+My Studies about Javascript!
