@@ -12,6 +12,7 @@ To get started you only need to understand its Core Concepts:
 <li>Output</li>
 <li>Loaders</li>
 <li>Plugins</li>
+<li>Mode</li>
 </ul>
 
 ### Entry
@@ -23,9 +24,11 @@ By default its value is ./src/index.js, but you can specify a different (or mult
 webpack.config.js
 
 <strong>
+```
 module.exports = {
   entry: './path/to/my/entry/file.js'
 };
+```
 </strong>
 
 ### Output
@@ -36,6 +39,7 @@ You can configure this part of the process by specifying an output field in your
 webpack.config.js
 
 <strong>
+```
 const path = require('path');
 
 module.exports = {
@@ -45,5 +49,47 @@ module.exports = {
     filename: 'my-first-webpack.bundle.js'
   }
 };
+```
+</strong>
+
+### Loaders
+Out of the box, webpack only understands JavaScript files. Loaders allow webpack to process other types of files and converting them into valid modules that can be consumed by your application and added to the dependency graph.
+
+At a high level, loaders have two purposes in your webpack configuration:
+
+1 - The test property identifies which file or files should be transformed.
+2 - The use property indicates which loader should be used to do the transforming.
+
+webpack.config.js
+
+<strong>
+```
+const path = require('path');
+
+const config = {
+  output: {
+    filename: 'my-first-webpack.bundle.js'
+  },
+  module: {
+    rules: [
+      { test: /\.txt$/, use: 'raw-loader' }
+    ]
+  }
+};
+
+module.exports = config;
+```
+</strong>
+### Plugins
+
+### Mode
+
+By setting the mode parameter to either development, production or none, you can enable webpack's built-in optimizations that correspond to each environment. The default value is production.
+<strong>
+```
+module.exports = {
+  mode: 'production'
+};
+```
 </strong>
 </p>
