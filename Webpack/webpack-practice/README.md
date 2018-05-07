@@ -22,14 +22,13 @@ An entry point indicates which module webpack should use to begin building out i
 By default its value is ./src/index.js, but you can specify a different (or multiple entry points) by configuring the entry property in the webpack configuration. For example:
 
 webpack.config.js
-
-<strong>
 ```
+
 module.exports = {
   entry: './path/to/my/entry/file.js'
 };
+
 ```
-</strong>
 
 ### Output
 The output property tells webpack where to emit the bundles it creates and how to name these files, it defaults to ./dist/bundle.js for the main output file and to the ./dist folder for any other generated file.
@@ -37,8 +36,6 @@ The output property tells webpack where to emit the bundles it creates and how t
 You can configure this part of the process by specifying an output field in your configuration:
 
 webpack.config.js
-
-<strong>
 ```
 const path = require('path');
 
@@ -50,7 +47,6 @@ module.exports = {
   }
 };
 ```
-</strong>
 
 ### Loaders
 Out of the box, webpack only understands JavaScript files. Loaders allow webpack to process other types of files and converting them into valid modules that can be consumed by your application and added to the dependency graph.
@@ -61,8 +57,6 @@ At a high level, loaders have two purposes in your webpack configuration:
 2 - The use property indicates which loader should be used to do the transforming.
 
 webpack.config.js
-
-<strong>
 ```
 const path = require('path');
 
@@ -79,7 +73,6 @@ const config = {
 
 module.exports = config;
 ```
-</strong>
 ### Plugins
 
 ### Mode
