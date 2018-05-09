@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/node,macos
+# Created by https://www.gitignore.io/api/node,macos,visualstudiocode
 
 ### macOS ###
 *.DS_Store
@@ -89,5 +89,13 @@ typings/
 .env
 
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
 
-# End of https://www.gitignore.io/api/node,macos
+
+# End of https://www.gitignore.io/api/node,macos,visualstudiocode
