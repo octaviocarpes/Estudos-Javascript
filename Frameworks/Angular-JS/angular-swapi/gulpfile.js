@@ -3,6 +3,7 @@ var inject = require('gulp-inject');
 var htmlclean = require('gulp-htmlclean');
 var cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
+var imagemin = require('gulp-imagemin');
 var paths = {
   src: 'src/**/*',
   srcHTML: 'src/**/*.html',
@@ -18,34 +19,40 @@ var paths = {
   distJS: 'dist/**/*.js'
 };
 
-gulp.task('html', function(){
-  return gulp.src(paths.srcHTML).pipe(htmlclean())
+gulp.task('html', function() {
+  return gulp.src(paths.srcHTML).pipe(htmlclean());
 });
-gulp.task('css', function(){
+gulp.task('css', function() {
   return gulp.src(paths.srcCSS).pipe(gulp.dest(paths.tmp));
 });
 
-gulp.task('html:dist', function () {
-  return gulp.src(paths.srcHTML)
+gulp.task('html:dist', function() {
+  return gulp
+    .src(paths.srcHTML)
     .pipe(htmlclean())
     .pipe(gulp.dest(paths.dist));
 });
-gulp.task('css:dist', function () {
-  return gulp.src(paths.srcCSS)
+gulp.task('css:dist', function() {
+  return gulp
+    .src(paths.srcCSS)
     .pipe(concat('style.min.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.dist));
 });
-gulp.task('inject', function(){
+gulp.task('inject', function() {
   var css = gulp.src(paths.tmpCSS);
   var js = gulp.src(paths.tmpJS);
-  return gulp.src(paths.tmpIndex).pipe(inject( css, {relative:true})).pipe(gulp.dest(paths.tmp));
+  return gulp
+    .src(paths.tmpIndex)
+    .pipe(inject(css, { relative: true }))
+    .pipe(gulp.dest(paths.tmp));
 });
 
-gulp.task('inject:dist', function () {
+gulp.task('inject:dist', function() {
   var css = gulp.src(paths.distCSS);
-  return gulp.src(paths.distIndex)
-    .pipe(inject( css, { relative:true } ))
+  return gulp
+    .src(paths.distIndex)
+    .pipe(inject(css, { relative: true }))
     .pipe(gulp.dest(paths.dist));
 });
 
