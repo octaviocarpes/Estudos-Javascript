@@ -1,6 +1,8 @@
-let app = angular.module('main', ['ui.router']);
+import angular from 'angular';
+import uiRouter from '@uirouter/angularjs';
+angular.module('main', [uiRouter]);
 
-app.config(function($stateProvider) {
+angular.module('main').config(function($stateProvider) {
   let homeState = {
     name: 'home',
     url: '/',
