@@ -99,8 +99,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({2:[function(require,module,exports) {
-console.log('Hello world!');
-},{}],3:[function(require,module,exports) {
+var myApp = angular.module('main', ['ui.router']);
+
+myApp.config(function ($stateProvider) {
+  var helloState = {
+    name: 'hello',
+    url: '/hello',
+    template: '<h3>hello world!</h3>'
+  };
+
+  var aboutState = {
+    name: 'about',
+    url: '/about',
+    template: '<h3>Its the UI-Router hello world app!</h3>'
+  };
+
+  $stateProvider.state(helloState);
+  $stateProvider.state(aboutState);
+});
+},{}],9:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -129,7 +146,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61889' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64372' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -270,5 +287,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[3,2], null)
+},{}]},{},[9,2], null)
 //# sourceMappingURL=/Parcel-POC.3d4b26b3.map

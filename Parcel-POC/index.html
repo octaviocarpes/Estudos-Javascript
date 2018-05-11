@@ -1,5 +1,10 @@
 <html>
-<body>
+<body ng-app="main">
+    <a ui-sref="hello" ui-sref-active="active">Hello</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+    <ui-view></ui-view>
+  <script src="./node_modules/angular/angular.min.js"></script>
+  <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>
