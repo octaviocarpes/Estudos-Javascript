@@ -1,0 +1,25 @@
+@import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
+
+body{
+    background-image: url('../img/stars-bg.jpg');
+    color: white;
+    width: 80%;
+}
+
+.nav-logo{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.user-view{
+    background-color: black;
+}
+
+.view{
+    position: relative;
+    left: 310px;
+    width: 100%;
+}

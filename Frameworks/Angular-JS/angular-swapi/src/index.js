@@ -1,17 +1,39 @@
+require('./styles/css/main.css');
+require('./styles/css/home.css');
+
+document.addEventListener('DOMContentLoaded', function() {
+  M.AutoInit();
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.slider');
+  var instances = M.Slider.init(elems);
+});
+
 angular.module('main', ['ui.router']).config([
   '$stateProvider',
-  function($stateProvider) {
+  '$locationProvider',
+  function($stateProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $stateProvider
       .state({
-        url: '/hello',
-        name: 'hello',
-        template: 'Hello world!'
+        url: '/',
+        name: 'home',
+        template: require('./components/home.html')
       })
       .state({
-        url: '/about',
-        name: 'about',
-        template: 'About'
+        url: '/films',
+        name: 'films',
+        template: require('./components/films.html')
+      })
+      .state({
+        url: '/characters',
+        name: 'characters',
+        template: require('./components/characters.html')
+      })
+      .state({
+        url: '/planets',
+        name: 'planets',
+        template: require('./components/planets.html')
       });
   }
 ]);
-console.log('FUUUUCK');

@@ -14,11 +14,33 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+            attrs: [':data-src']
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
       }
     ]
   },
   entry: {
-    vendors: ['angular', '@uirouter/angularjs'],
+    vendors: ['angular', '@uirouter/angularjs', 'materialize-css'],
     bundle: './src/index.js'
   },
   output: {
@@ -27,7 +49,6 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'src'),
-    // compress: true,
     port: 9000
   },
   plugins: [
