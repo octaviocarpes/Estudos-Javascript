@@ -40,7 +40,7 @@ module.exports = {
     ]
   },
   entry: {
-    vendors: ['angular', '@uirouter/angularjs', 'materialize-css'],
+    vendors: ['jquery', 'angular', '@uirouter/angularjs','angular-materialize' , 'materialize-css'],
     bundle: './src/index.js'
   },
   output: {

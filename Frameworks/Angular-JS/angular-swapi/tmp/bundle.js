@@ -82,6 +82,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./src/styles/css/home.css":
+/*!***********************************************************!*\
+  !*** ./node_modules/css-loader!./src/styles/css/home.css ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".home-content{\\n    width:50%;\\n    position: relative;\\n    left: 50%;\\n    transform: translate(-50%, 0);\\n    top: 50px;\\n}\\n\\n.caption{\\n    background-color: rgba(0, 0, 0, 0.766);\\n    padding: 10px;\\n}\\n\\n.btn-large{\\n    position: relative;\\n    left: 50%;\\n    top: 50px;\\n    transform: translate(-50%, 0);\\n    color:black;\\n}\\n\\n.hidden{\\n    display: none;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/styles/css/home.css?./node_modules/css-loader");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./src/styles/css/main.css":
 /*!***********************************************************!*\
   !*** ./node_modules/css-loader!./src/styles/css/main.css ***!
@@ -89,7 +100,18 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ \"./node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.i(__webpack_require__(/*! -!../../../node_modules/css-loader!../../../node_modules/materialize-css/dist/css/materialize.min.css */ \"./node_modules/css-loader/index.js!./node_modules/materialize-css/dist/css/materialize.min.css\"), \"\");\n\n// module\nexports.push([module.i, \"body{\\n    background-image: url(\" + escape(__webpack_require__(/*! ../img/stars-bg.jpg */ \"./src/styles/img/stars-bg.jpg\")) + \");\\n    color: white;\\n}\\n\\n.nav-logo{\\n    width: 150px;\\n    height: 150px;\\n    position: relative;\\n    left: 50%;\\n    transform: translate(-50%,0);\\n}\\n\\n.user-view{\\n    background-color: black;\\n}\\n\\n.view{\\n    position: relative;\\n    left: 310px;\\n    width: 100%;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/styles/css/main.css?./node_modules/css-loader");
+eval("var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ \"./node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.i(__webpack_require__(/*! -!../../../node_modules/css-loader!../../../node_modules/materialize-css/dist/css/materialize.min.css */ \"./node_modules/css-loader/index.js!./node_modules/materialize-css/dist/css/materialize.min.css\"), \"\");\n\n// module\nexports.push([module.i, \"body{\\n    background-image: url(\" + escape(__webpack_require__(/*! ../img/stars-bg.jpg */ \"./src/styles/img/stars-bg.jpg\")) + \");\\n    color: white;\\n    width: 80%;\\n}\\n\\n.nav-logo{\\n    width: 150px;\\n    height: 150px;\\n    position: relative;\\n    left: 50%;\\n    transform: translate(-50%,0);\\n}\\n\\n.user-view{\\n    background-color: black;\\n}\\n\\n.view{\\n    position: relative;\\n    left: 310px;\\n    width: 100%;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/styles/css/main.css?./node_modules/css-loader");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./src/styles/css/starwarsintro.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader!./src/styles/css/starwarsintro.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ \"./node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"/*\\nName: StarWarsIntro.css\\nURI: polarnotion.github.io/starwarsintro\\nAuthor: Polar Notion\\nAuthor URI: http://polarnotion.com/\\nDescription: A simple CSS library for creating a Star Wars Intro Crawl. May the Force be with you.\\nVersion: 1.0\\n*/\\n\\nbody, html{\\n  height: 100%;\\n  min-height: 100vh;\\n  margin: 0px;\\n}\\n\\n.star-wars-intro {\\n  background: url(\" + escape(__webpack_require__(/*! ../img/stars-bg.jpg */ \"./src/styles/img/stars-bg.jpg\")) + \") center center;\\n  width: 100%;\\n  height: 100%;\\n  font-family: \\\"Droid Sans\\\", arial, verdana, sans-serif;\\n  font-weight: 700;\\n  color: #EBD71C;\\n  background-color: #000;\\n  overflow: hidden;\\n  position: relative;\\n}\\n\\n.star-wars-intro p.intro-text {\\n  position: relative;\\n  max-width: 16em;\\n  font-size: 200%;\\n  font-weight: 400;\\n  margin: 20% auto;\\n  color: #4ee;\\n  opacity: 0;\\n  z-index: 1;\\n  text-align: center;\\n  -webkit-animation: intro 2s ease-out;\\n  -moz-animation: intro 2s ease-out;\\n  -ms-animation: intro 2s ease-out;\\n  -o-animation: intro 2s ease-out;\\n  animation: intro 2s ease-out;\\n}\\n\\n.star-wars-intro .main-content{\\n  margin-left: auto;\\n  margin-right: auto;\\n  position: absolute;\\n  z-index: 3;\\n  width: 98%;\\n  height: 50em;\\n  bottom: 0;\\n  font-size: 80px;\\n  font-weight: bold;\\n  text-align: justify;\\n  overflow: hidden;\\n  transform-origin: 50% 100%;\\n  transform: perspective(350px) rotateX(25deg);\\n}\\n\\n.star-wars-intro .main-content:after {\\n  position: absolute;\\n  content: ' ';\\n  top: 0;\\n  bottom: 60%;\\n  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);\\n  pointer-events: none;\\n}\\n\\n.star-wars-intro .space-button {\\n  color: #EBD71C;\\n  border: 12px solid #EBD71C;\\n  padding: 20px;\\n  background: transparent;\\n  text-decoration: none;\\n  margin: 0 auto;\\n  display: block;\\n  text-align: center;\\n}\\n\\n.star-wars-intro .space-button:hover {\\n  background-color: #D2BE03;\\n  border-color: #D2BE03;\\n  color: black;\\n}\\n\\n.star-wars-intro .space-button:active,\\n.star-wars-intro .space-button:focus {\\n  background-color: #B8A40A;\\n  border-color: #B8A40A;\\n  color: black;\\n}\\n\\n.star-wars-intro .title-content {\\n  position: absolute;\\n  top: 100%;\\n  animation: scroll 120s linear 4s forwards;\\n}\\n\\n.star-wars-intro .title-content > .content-header {\\n  text-align: center;\\n}\\n\\n/* Main Image Styles */\\n\\n.star-wars-intro .main-logo {\\n  position: absolute;\\n  width: 2.6em;\\n  left: 50%;\\n  top: 20vh;\\n  font-size: 10em;\\n  text-align: center;\\n  margin-left: -1.3em;\\n  line-height: 0.8em;\\n  letter-spacing: -0.05em;\\n  color: #000;\\n  text-shadow: -2px -2px 0 #EBD71C, 2px -2px 0 #EBD71C, -2px 2px 0 #EBD71C, 2px 2px 0 #EBD71C;\\n  opacity: 0;\\n  z-index: 1;\\n  -webkit-animation: logo 5s ease-out 2.5s;\\n  -moz-animation: logo 5s ease-out 2.5s;\\n  -ms-animation: logo 5s ease-out 2.5s;\\n  -o-animation: logo 5s ease-out 2.5s;\\n  animation: logo 5s ease-out 2.5s;\\n}\\n\\n.star-wars-intro .main-logo > img {\\n  max-width: 100%;\\n}\\n\\n@-webkit-keyframes intro {\\n  0% { opacity: 1; }\\n  90% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n\\n@-moz-keyframes intro {\\n  0% { opacity: 1; }\\n  90% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n\\n@-ms-keyframes intro {\\n  0% { opacity: 1; }\\n  90% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n\\n@-o-keyframes intro {\\n  0% { opacity: 1; }\\n  90% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n\\n@keyframes intro {\\n  0% { opacity: 1; }\\n  90% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n\\n\\n@-webkit-keyframes logo {\\n  0% { -webkit-transform: scale(1); opacity: 1; }\\n  50% { opacity: 1; }\\n  100% { -webkit-transform: scale(0.1); opacity: 0; }\\n}\\n\\n@-moz-keyframes logo {\\n  0% { -moz-transform: scale(1); opacity: 1; }\\n  50% { opacity: 1; }\\n  100% { -moz-transform: scale(0.1); opacity: 0; }\\n}\\n\\n@-ms-keyframes logo {\\n  0% { -ms-transform: scale(1); opacity: 1; }\\n  50% { opacity: 1; }\\n  100% { -ms-transform: scale(0.1); opacity: 0; }\\n}\\n\\n@-o-keyframes logo {\\n  0% { -o-transform: scale(1); opacity: 1; }\\n  50% { opacity: 1; }\\n  100% { -o-transform: scale(0.1); opacity: 0; }\\n}\\n\\n@keyframes logo {\\n  0% { transform: scale(1); opacity: 1; }\\n  50% { opacity: 1; }\\n  100% { transform: scale(0.1); opacity: 0; }\\n}\\n\\n@keyframes scroll {\\n  0% { top: 100%; }\\n  100% { top: -170%; }\\n}\\n\\n@media screen and (max-width: 720px) {\\n  .star-wars-intro .main-content {\\n    font-size: 35px;\\n  }\\n  .star-wars-intro .title-content {\\n    position: absolute;\\n    top: 100%;\\n    animation: scroll 100s linear 4s forwards;\\n  }\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/styles/css/starwarsintro.css?./node_modules/css-loader");
 
 /***/ }),
 
@@ -155,7 +177,7 @@ eval("module.exports = \"<div><h1>CHARACTERS!</h1></div>\";\n\n//# sourceURL=web
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div><h1>FILMS!</h1></div>\";\n\n//# sourceURL=webpack:///./src/components/films.html?");
+eval("module.exports = \"<div>\\n    <h1>Films</h1>\\n    <div class=\\\"row\\\">\\n        <div class=\\\"col s4\\\">6-columns (one-half)</div>\\n        <div class=\\\"col s4\\\">6-columns (one-half)</div>\\n    </div>\\n</div>\";\n\n//# sourceURL=webpack:///./src/components/films.html?");
 
 /***/ }),
 
@@ -166,7 +188,7 @@ eval("module.exports = \"<div><h1>FILMS!</h1></div>\";\n\n//# sourceURL=webpack:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div class=\\\"carousel carousel-slider center\\\">\\n    <div class=\\\"carousel-fixed-item center\\\">\\n        <a class=\\\"btn waves-effect white grey-text darken-text-2\\\">button</a>\\n    </div>\\n    <div class=\\\"carousel-item red white-text\\\" href=\\\"#one!\\\">\\n        <h2>First Panel</h2>\\n        <p class=\\\"white-text\\\">This is your first panel</p>\\n    </div>\\n    <div class=\\\"carousel-item amber white-text\\\" href=\\\"#two!\\\">\\n        <h2>Second Panel</h2>\\n        <p class=\\\"white-text\\\">This is your second panel</p>\\n    </div>\\n    <div class=\\\"carousel-item green white-text\\\" href=\\\"#three!\\\">\\n        <h2>Third Panel</h2>\\n        <p class=\\\"white-text\\\">This is your third panel</p>\\n    </div>\\n    <div class=\\\"carousel-item blue white-text\\\" href=\\\"#four!\\\">\\n        <h2>Fourth Panel</h2>\\n        <p class=\\\"white-text\\\">This is your fourth panel</p>\\n    </div>\\n</div>\";\n\n//# sourceURL=webpack:///./src/components/home.html?");
+eval("module.exports = \"<div class=\\\"star-wars-intro\\\">\\n    <p class=\\\"intro-text\\\">\\n        In a galaxy far far away...\\n    </p>\\n    <h2 class=\\\"main-logo\\\">\\n        <img src=\\\"../styles/img/star-wars-logo.png\\\">\\n    </h2>\\n    <div class=\\\"main-content\\\">\\n        <div class=\\\"title-content\\\">\\n            <p class=\\\"content-header\\\">SWAPI API POC\\n                <br/>The terifying bugs</p>\\n            <br>\\n            <p class=\\\"content-body\\\">\\n                After a very long time i have finished this POC.\\n            </p>\\n        </div>\\n    </div>\\n</div>\\n<div class=\\\"after-crawler hidden\\\">\\n   <h3> Use the links on the side to navigate through the content!</h3>\\n</div>\\n<button id=\\\"skip-button\\\" class=\\\"btn-large waves-effect waves-light yellow accent-4\\\" type=\\\"button\\\">Skip\\n    <i class=\\\"material-icons right\\\">play_arrow</i>\\n</button>\";\n\n//# sourceURL=webpack:///./src/components/home.html?");
 
 /***/ }),
 
@@ -177,7 +199,7 @@ eval("module.exports = \"<div class=\\\"carousel carousel-slider center\\\">\\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div><h1>PLANETS!</h1></div>\\n<div class=\\\"row\\\">\\n        <div class=\\\"col s12 m7\\\">\\n          <div class=\\\"card\\\">\\n            <div class=\\\"card-image\\\">\\n              <img src=\\\"images/sample-1.jpg\\\">\\n              <span class=\\\"card-title\\\">Card Title</span>\\n            </div>\\n            <div class=\\\"card-content\\\">\\n              <p>I am a very simple card. I am good at containing small bits of information.\\n              I am convenient because I require little markup to use effectively.</p>\\n            </div>\\n            <div class=\\\"card-action\\\">\\n              <a href=\\\"#\\\">This is a link</a>\\n            </div>\\n          </div>\\n        </div>\\n      </div>\";\n\n//# sourceURL=webpack:///./src/components/planets.html?");
+eval("module.exports = \"<div><h1>PLANETS!</h1></div>\\n<div class=\\\"row\\\">\\n        <div class=\\\"col s12 m7\\\">\\n          <div class=\\\"card\\\">\\n            <div class=\\\"card-image\\\">\\n              \\n              <span class=\\\"card-title\\\">Card Title</span>\\n            </div>\\n            <div class=\\\"card-content\\\">\\n              <p>I am a very simple card. I am good at containing small bits of information.\\n              I am convenient because I require little markup to use effectively.</p>\\n            </div>\\n            <div class=\\\"card-action\\\">\\n              <a href=\\\"#\\\">This is a link</a>\\n            </div>\\n          </div>\\n        </div>\\n      </div>\";\n\n//# sourceURL=webpack:///./src/components/planets.html?");
 
 /***/ }),
 
@@ -189,7 +211,30 @@ eval("module.exports = \"<div><h1>PLANETS!</h1></div>\\n<div class=\\\"row\\\">\
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _main = _interopRequireDefault(__webpack_require__(/*! ./styles/css/main.css */ \"./src/styles/css/main.css\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nangular.module('main', ['ui.router']).config(['$stateProvider', '$locationProvider', function ($stateProvider, $locationProvider) {\n  $locationProvider.html5Mode(true);\n  $stateProvider.state({\n    url: '/',\n    name: 'home',\n    template: __webpack_require__(/*! ./components/home.html */ \"./src/components/home.html\")\n  }).state({\n    url: '/films',\n    name: 'films',\n    template: __webpack_require__(/*! ./components/films.html */ \"./src/components/films.html\")\n  }).state({\n    url: '/characters',\n    name: 'characters',\n    template: __webpack_require__(/*! ./components/characters.html */ \"./src/components/characters.html\")\n  }).state({\n    url: '/planets',\n    name: 'planets',\n    template: __webpack_require__(/*! ./components/planets.html */ \"./src/components/planets.html\")\n  });\n}]);\n$('.carousel.carousel-slider').carousel({\n  fullWidth: true,\n  indicators: true\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n__webpack_require__(/*! ./styles/css/main.css */ \"./src/styles/css/main.css\");\n\n__webpack_require__(/*! ./styles/css/home.css */ \"./src/styles/css/home.css\");\n\n__webpack_require__(/*! ./styles/css/starwarsintro.css */ \"./src/styles/css/starwarsintro.css\");\n\n__webpack_require__(/*! ./js/home.js */ \"./src/js/home.js\");\n\nangular.module('main', ['ui.router']).config(['$stateProvider', '$locationProvider', function ($stateProvider, $locationProvider) {\n  $locationProvider.html5Mode(true);\n  $stateProvider.state({\n    url: '/',\n    name: 'home',\n    template: __webpack_require__(/*! ./components/home.html */ \"./src/components/home.html\"),\n    onEnter: function onEnter() {\n      var elems = document.querySelectorAll('.slider');\n      var instances = M.Slider.init(elems);\n    },\n    onExit: function onExit() {\n      var elems = document.querySelectorAll('.slider');\n      var instances = M.Slider.init(elems);\n    }\n  }).state({\n    url: '/films',\n    name: 'films',\n    template: __webpack_require__(/*! ./components/films.html */ \"./src/components/films.html\")\n  }).state({\n    url: '/characters',\n    name: 'characters',\n    template: __webpack_require__(/*! ./components/characters.html */ \"./src/components/characters.html\")\n  }).state({\n    url: '/planets',\n    name: 'planets',\n    template: __webpack_require__(/*! ./components/planets.html */ \"./src/components/planets.html\")\n  });\n}]);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/home.js":
+/*!************************!*\
+  !*** ./src/js/home.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n$('#skip-button').click(function () {});\n\n//# sourceURL=webpack:///./src/js/home.js?");
+
+/***/ }),
+
+/***/ "./src/styles/css/home.css":
+/*!*********************************!*\
+  !*** ./src/styles/css/home.css ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!./home.css */ \"./node_modules/css-loader/index.js!./src/styles/css/home.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/styles/css/home.css?");
 
 /***/ }),
 
@@ -201,6 +246,17 @@ eval("\n\nvar _main = _interopRequireDefault(__webpack_require__(/*! ./styles/cs
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!./main.css */ \"./node_modules/css-loader/index.js!./src/styles/css/main.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/styles/css/main.css?");
+
+/***/ }),
+
+/***/ "./src/styles/css/starwarsintro.css":
+/*!******************************************!*\
+  !*** ./src/styles/css/starwarsintro.css ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!./starwarsintro.css */ \"./node_modules/css-loader/index.js!./src/styles/css/starwarsintro.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/styles/css/starwarsintro.css?");
 
 /***/ }),
 

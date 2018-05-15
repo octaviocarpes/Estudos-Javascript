@@ -10,3 +10,15 @@
     background-color: rgba(0, 0, 0, 0.766);
     padding: 10px;
 }
+
+.btn-large{
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, 0);
+    color:black;
+}
+
+.hidden{
+    display: none;
+}

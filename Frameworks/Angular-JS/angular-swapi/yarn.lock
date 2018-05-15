@@ -674,6 +674,12 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
 
+angular-materialize@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/angular-materialize/-/angular-materialize-0.2.2.tgz#13304ce00e983e02d24cac4d835e1f4b9cb10cd3"
+  dependencies:
+    node-materialize "https://github.com/ryepdx/node-materialize/tarball/master"
+
 angular@^1.6.10:
   version "1.6.10"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.10.tgz#eed3080a34d29d0f681ff119b18ce294e3f74826"
@@ -3959,6 +3965,10 @@ gulplog@^1.0.0:
   dependencies:
     glogg "^1.0.0"
 
+hammerjs@^2.0.4:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+
 handle-thing@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-1.2.5.tgz#fd7aad726bf1a5fd16dfc29b2f7a6601d27139c4"
@@ -4780,6 +4790,14 @@ jpegtran-bin@^3.0.0:
     bin-build "^2.0.0"
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
+
+jquery@>=1.7, jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
+jquery@^2.1.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
 
 js-base64@^2.1.9:
   version "2.4.3"
@@ -5661,6 +5679,14 @@ node-libs-browser@^2.0.0:
     util "^0.10.3"
     vm-browserify "0.0.4"
 
+"node-materialize@https://github.com/ryepdx/node-materialize/tarball/master":
+  version "1.1.1"
+  resolved "https://github.com/ryepdx/node-materialize/tarball/master#181c718e28c10ddf65ca21dcda93bea01e4daba7"
+  dependencies:
+    hammerjs "^2.0.4"
+    jquery "^2.1.4"
+    pickadate "^3.5.6"
+
 node-pre-gyp@^0.9.0:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.9.1.tgz#f11c07516dd92f87199dbc7e1838eab7cd56c9e0"
@@ -6187,6 +6213,12 @@ pbkdf2@^3.0.3:
 pend@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
+
+pickadate@^3.5.6:
+  version "3.5.6"
+  resolved "https://registry.yarnpkg.com/pickadate/-/pickadate-3.5.6.tgz#c998302343b79a19954fc49c45cc708347602806"
+  dependencies:
+    jquery ">=1.7"
 
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"

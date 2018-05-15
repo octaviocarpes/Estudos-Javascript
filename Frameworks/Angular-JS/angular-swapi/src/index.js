@@ -1,12 +1,11 @@
 require('./styles/css/main.css');
 require('./styles/css/home.css');
+require('./styles/css/starwarsintro.css');
+require('./js/home.js');
 
 document.addEventListener('DOMContentLoaded', function() {
-  M.AutoInit();
-});
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.slider');
-  var instances = M.Slider.init(elems);
+  var elems = document.querySelectorAll('.parallax');
+  var instances = M.Parallax.init(elems);
 });
 
 angular.module('main', ['ui.router']).config([
@@ -18,7 +17,15 @@ angular.module('main', ['ui.router']).config([
       .state({
         url: '/',
         name: 'home',
-        template: require('./components/home.html')
+        template: require('./components/home.html'),
+        onEnter: function() {
+          var elems = document.querySelectorAll('.slider');
+          var instances = M.Slider.init(elems);
+        },
+        onExit: function() {
+          var elems = document.querySelectorAll('.slider');
+          var instances = M.Slider.init(elems);
+        }
       })
       .state({
         url: '/films',
