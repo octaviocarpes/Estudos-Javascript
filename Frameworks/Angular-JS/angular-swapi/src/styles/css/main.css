@@ -1,5 +1,3 @@
-@import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
-
 body{
     background-image: url('../img/stars-bg.jpg');
     color: white;
@@ -18,8 +16,21 @@ body{
     background-color: black;
 }
 
+.user-view-logo{
+    width: 225px;
+}
+
 .view{
     position: relative;
     left: 310px;
     width: 100%;
+}
+
+.mdc-card{
+    width: 250px;
+    height: 250px;
+}
+
+.mdc-card__media {
+    background-image: url("../img/sw7poster.jpg");
 }

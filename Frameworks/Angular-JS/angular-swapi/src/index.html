@@ -13,31 +13,26 @@
 </head>
 
 <body ng-app="main">
-    <div>
-        <ul id="slide-out" class="sidenav sidenav-fixed">
-            <li>
-                <div class="user-view">
-                    <a ui-sref="home">
-                        <img class="nav-logo" src="styles/img/starwars_logo.png" alt="">
-                    </a>
-                </div>
-            </li>
-            <li>
-                <a class="waves-effect" ui-sref="films" ui-sref-active="active">Films</a>
-            </li>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <img class="user-view-logo" src="./styles/img/star-wars-logo.png">
+            </div>
+        </li>
+        <li>
+            <a class="waves-effect" ui-sref="films">Films</a>
+        </li>
+        <li>
+            <a class="waves-effect" ui-sref="characters">Characters</a>
+        </li>
+        <li>
+            <a class="waves-effect" ui-sref="planets">Planets</a>
+        </li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+        <i class="material-icons">menu</i>
+    </a>
 
-            <li>
-                <a class="waves-effect" ui-sref="characters" ui-sref-active="active">Characters</a>
-            </li>
-
-            <li>
-                <a class="waves-effect" ui-sref="planets" ui-sref-active="active">Planets</a>
-            </li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-        </a>
-    </div>
     <div class="view" ui-view></div>
 </body>
 

@@ -504,6 +504,10 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@material/auto-init@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@material/auto-init/-/auto-init-0.35.0.tgz#e837ebf4720aeb017c92f6c29d27a0b45d47833e"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -679,6 +683,10 @@ angular-materialize@^0.2.2:
   resolved "https://registry.yarnpkg.com/angular-materialize/-/angular-materialize-0.2.2.tgz#13304ce00e983e02d24cac4d835e1f4b9cb10cd3"
   dependencies:
     node-materialize "https://github.com/ryepdx/node-materialize/tarball/master"
+
+angular-resource@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.7.0.tgz#356f92cafd68ded59862d7af34ddf8c08ac414b4"
 
 angular@^1.6.10:
   version "1.6.10"

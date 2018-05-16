@@ -1,14 +1,7 @@
+require('../node_modules/materialize-css/dist/css/materialize.min.css');
 require('./styles/css/main.css');
-require('./styles/css/home.css');
-require('./styles/css/starwarsintro.css');
-require('./js/home.js');
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.parallax');
-  var instances = M.Parallax.init(elems);
-});
-
-angular.module('main', ['ui.router']).config([
+angular.module('main', ['ui.router', 'directives' ,'services']).config([
   '$stateProvider',
   '$locationProvider',
   function($stateProvider, $locationProvider) {
@@ -17,30 +10,25 @@ angular.module('main', ['ui.router']).config([
       .state({
         url: '/',
         name: 'home',
-        template: require('./components/home.html'),
-        onEnter: function() {
-          var elems = document.querySelectorAll('.slider');
-          var instances = M.Slider.init(elems);
-        },
-        onExit: function() {
-          var elems = document.querySelectorAll('.slider');
-          var instances = M.Slider.init(elems);
-        }
+        template: require('./pages/films.html')
       })
       .state({
         url: '/films',
         name: 'films',
-        template: require('./components/films.html')
+        template: require('./pages/films.html')
       })
       .state({
         url: '/characters',
         name: 'characters',
-        template: require('./components/characters.html')
+        template: require('./pages/characters.html')
       })
       .state({
         url: '/planets',
         name: 'planets',
-        template: require('./components/planets.html')
+        template: require('./pages/planets.html')
       });
   }
 ]);
+require('./js/directives/swapi-directives.js');
+require('./js/services/swapi-service.js');
+require('./js/controllers/filmsController.js');
