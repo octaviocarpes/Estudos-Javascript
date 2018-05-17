@@ -20,8 +20,8 @@ angular.module('main', ['ui.router', 'directives', 'services']).config([
         template: require('./pages/films.html')
       })
       .state({
-        url: '/{movieid}',
-        name: 'films.detail',
+        url: '/details/{movieid}',
+        name: 'details',
         template: require('./pages/film-info.html')
       })
       .state({
