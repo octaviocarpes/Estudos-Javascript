@@ -1,5 +1,4 @@
-angular.module('directives', [])
-  .directive('card', () => {
+angular.module('directives', []).directive('card', () => {
   let ddo = {};
 
   ddo.restrict = 'AE';
@@ -13,4 +12,4 @@ angular.module('directives', [])
   ddo.templateUrl = 'js/directives/card.html';
 
   return ddo;
-})
+});
