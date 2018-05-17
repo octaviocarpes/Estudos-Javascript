@@ -1,6 +1,7 @@
 require('../node_modules/materialize-css/dist/css/materialize.min.css');
 require('./styles/css/main.css');
 require('./styles/css/films.css');
+import $ from 'jquery/dist/jquery.slim';
 
 angular.module('main', ['ui.router', 'directives', 'services']).config([
   '$stateProvider',
@@ -17,6 +18,11 @@ angular.module('main', ['ui.router', 'directives', 'services']).config([
         url: '/films',
         name: 'films',
         template: require('./pages/films.html')
+      })
+      .state({
+        url: '/{movieid}',
+        name: 'films.detail',
+        template: require('./pages/film-info.html')
       })
       .state({
         url: '/characters',
