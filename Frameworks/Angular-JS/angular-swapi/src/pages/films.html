@@ -1,5 +1,8 @@
-<div ng-controller="filmsController">
+<div class="films" ng-controller="filmsController">
     <h1>Films</h1>
-    <h4 ng-repeat="film in films">{{film.title}}</h4>
-    <film-card></film-card>
+    <div class="row">
+        <div ng-repeat="film in films">
+            <card title="{{film.title}}" image="{{images[$index]}}" crawl="{{film.opening_crawl}}"></card>
+        </div>
+    </div>
 </div>

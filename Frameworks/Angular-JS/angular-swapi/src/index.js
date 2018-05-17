@@ -1,7 +1,8 @@
 require('../node_modules/materialize-css/dist/css/materialize.min.css');
 require('./styles/css/main.css');
+require('./styles/css/films.css');
 
-angular.module('main', ['ui.router', 'directives' ,'services']).config([
+angular.module('main', ['ui.router', 'directives', 'services']).config([
   '$stateProvider',
   '$locationProvider',
   function($stateProvider, $locationProvider) {
@@ -31,4 +32,5 @@ angular.module('main', ['ui.router', 'directives' ,'services']).config([
 ]);
 require('./js/directives/swapi-directives.js');
 require('./js/services/swapi-service.js');
+require('./js/controllers/mainController.js');
 require('./js/controllers/filmsController.js');

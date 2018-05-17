@@ -1,16 +1,6 @@
-angular.module('main').controller('filmsController', function($scope, filmResource, $http) {
-  $scope.films = [];
-
-  $http({
-    method: 'GET',
-    url: filmResource.filmUrl
-  }).then(
-    function successCallback(response) {
-      $scope.films = response.data.results;
-    }
-  ).catch(
-    function errorCallBack(response){
-      console.log(response);
-    }
-  )
-});
+angular
+  .module('main')
+  .controller('filmsController', function($scope, filmResource, dataResource, $http) {
+    $scope.films = dataResource.filmsData;
+    $scope.images = dataResource.images;
+  });

@@ -1,13 +1,16 @@
-angular.module('directives', []).directive('film-card', function() {
+angular.module('directives', [])
+  .directive('card', () => {
   let ddo = {};
 
   ddo.restrict = 'AE';
 
   ddo.scope = {
-    title: '@'
+    title: '@',
+    image: '@',
+    crawl: '@'
   };
 
-  ddo.templateUrl = '../../components/card.html';
+  ddo.templateUrl = 'js/directives/card.html';
 
   return ddo;
-});
+})
