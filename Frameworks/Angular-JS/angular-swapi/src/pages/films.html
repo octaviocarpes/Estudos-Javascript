@@ -2,7 +2,7 @@
     <h1>Films</h1>
     <div class="row">
         <div ng-repeat="film in films">
-            <film-card title="{{film.title}}" image="{{images[$index]}}" crawl="{{film.opening_crawl}}" movieid="{{film.episode_id}}"></film-card>
+            <film-card title="{{film.title}}" image="{{images[$index].url}}" crawl="{{film.opening_crawl}}" movieid="{{film.episode_id}}"></film-card>
         </div>
     </div>
 </div>

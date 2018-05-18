@@ -11,13 +11,34 @@ angular
     let planetsData = [];
     let images = [];
 
-    images.push('../styles/img/star-wars-a-new-hope.jpg');
-    images.push('../styles/img/star-wars-attack-of-the-clones.jpg');
-    images.push('../styles/img/star-wars-the-phantom-menace.jpg');
-    images.push('../styles/img/star-wars-revenge-of-the-sith.jpg');
-    images.push('../styles/img/star-wars-return-of-the-jedi.jpg');
-    images.push('../styles/img/star-wars-the-empire-strikes-back.jpg');
-    images.push('../styles/img/star-wars-the-force-awakens.jpg');
+    images.push({
+        url:'../styles/img/A New Hope.jpg',
+        name:'A New Hope'      
+      });
+    images.push({
+        url:'../styles/img/Attack of the Clones.jpg',
+        name:'Attack of the Clones'      
+      });
+    images.push({
+        url:'../styles/img/The Phantom Menace.jpg',
+        name:'The Phantom Menace'      
+      });
+    images.push({
+        url:'../styles/img/Revenge of the Sith.jpg',
+        name:'Revenge of the Sith'      
+      });
+    images.push({
+        url:'../styles/img/Return of the Jedi.jpg',
+        name:'Return of the Jedi'      
+      });
+    images.push({
+        url:'../styles/img/The Empire Strikes Back.jpg',
+        name:'The Empire Strikes Back'      
+      });
+    images.push({
+        url:'../styles/img/The Force Awakens.jpg',
+        name:'The Force Awakens'      
+      });
 
     function storeFilmData(array) {
       array.forEach(element => {

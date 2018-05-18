@@ -20,7 +20,7 @@ angular.module('main', ['ui.router', 'directives', 'services']).config([
         template: require('./pages/films.html')
       })
       .state({
-        url: '/details/{movieid}',
+        url: '/details/?{movieid}',
         name: 'details',
         template: require('./pages/film-info.html')
       })
@@ -40,3 +40,4 @@ require('./js/directives/swapi-directives.js');
 require('./js/services/swapi-service.js');
 require('./js/controllers/mainController.js');
 require('./js/controllers/filmsController.js');
+require('./js/controllers/filmDetailController.js');
