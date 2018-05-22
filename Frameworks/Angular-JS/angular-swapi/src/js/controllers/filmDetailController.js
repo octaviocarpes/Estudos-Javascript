@@ -1,10 +1,19 @@
-angular.module('main').controller('filmDetailController', ($scope, dataResource, $stateParams) => {
-  $scope.film = {};
+angular
+  .module('main')
+  .controller('filmDetailController', ($scope, imagesResource, $stateParams, filmsService) => {
+    let movieid = $stateParams.movieid;
+    let films = [];
 
-  let selectedFilm = dataResource.filmsData.filter( (element) => {
-    console.log('element: ' + element.episode_id);
-    return element.episode_id == $stateParams.movieid;
+    filmsService.async()
+    .then( (response) => {
+      films = response.data.results;
+       let selectedFilm = films.map( (movieid) => {
+        return movieid;
+      });
+      $scope.film = selectedFilm[0];
+    })
+    .catch( (response) => {
+      console.log(response);
+    });
+    
   });
-
-  $scope.film = selectedFilm[0];
-});

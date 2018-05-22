@@ -3,7 +3,7 @@ require('./styles/css/main.css');
 require('./styles/css/films.css');
 import $ from 'jquery/dist/jquery.slim';
 
-angular.module('main', ['ui.router', 'directives', 'services']).config([
+angular.module('main', ['ui.router', 'directives', 'services', 'filmsService']).config([
   '$stateProvider',
   '$locationProvider',
   function($stateProvider, $locationProvider) {
@@ -38,6 +38,6 @@ angular.module('main', ['ui.router', 'directives', 'services']).config([
 ]);
 require('./js/directives/swapi-directives.js');
 require('./js/services/swapi-service.js');
-require('./js/controllers/mainController.js');
+require('./js/services/films-service.js');
 require('./js/controllers/filmsController.js');
 require('./js/controllers/filmDetailController.js');
