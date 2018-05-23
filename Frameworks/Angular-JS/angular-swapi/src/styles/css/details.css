@@ -1,0 +1,32 @@
+.detail-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side-poster{
+    width: 400px;
+    height: 600px;
+}
+
+.collapsible-header{
+    width: 100%;
+}
+
+.collapsible-body{
+    width: 100%;
+}
+
+.nav{
+    position: relative;
+    top: 0;
+}
+
+.film-info{
+    width: 75%;
+}
+
+.brand-logo{
+    position: relative;
+    left: 5px;
+}

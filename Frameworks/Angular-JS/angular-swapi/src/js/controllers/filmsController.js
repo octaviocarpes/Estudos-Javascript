@@ -7,7 +7,12 @@ angular
     filmsService
       .async()
       .then(response => {
-        $scope.films = response.data.results;
+        films = response.data.results;
+        for (let i = 0; i < response.data.results.length; i++) {
+          films[i].imageUrl = imagesResource.images[i].url;
+        }
+
+        $scope.films = films;
         document.querySelector('.progress').classList.add('hidden');
       })
       .catch(response => {

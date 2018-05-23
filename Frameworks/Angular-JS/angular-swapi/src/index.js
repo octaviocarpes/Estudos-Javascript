@@ -1,7 +1,7 @@
 require('../node_modules/materialize-css/dist/css/materialize.min.css');
 require('./styles/css/main.css');
 require('./styles/css/films.css');
-import $ from 'jquery/dist/jquery.slim';
+require('./styles/css/details.css');
 
 angular.module('main', ['ui.router', 'directives', 'services', 'filmsService']).config([
   '$stateProvider',
@@ -36,6 +36,7 @@ angular.module('main', ['ui.router', 'directives', 'services', 'filmsService']).
       });
   }
 ]);
+
 require('./js/directives/swapi-directives.js');
 require('./js/services/swapi-service.js');
 require('./js/services/films-service.js');
