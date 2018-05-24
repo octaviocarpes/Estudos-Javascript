@@ -1,11 +1,14 @@
 <div ng-controller="filmDetailController">
-    <div class="box page-box">
+    <div class="box page-box hidden">
         <div class="side-bar">
             <h1 class="title is-1">{{film.title}}</h1>
             <film-poster image="{{film.imageUrl}}"></film-poster>
         </div>
         <div class="film-content">
-
+            <div class="tile is-ancestor">
+                <p class="title is-ancestor">Opening Crawl:</p>
+                <p>{{film.opening_crawl}}</p>
+            </div>
         </div>
     </div>
 </div>

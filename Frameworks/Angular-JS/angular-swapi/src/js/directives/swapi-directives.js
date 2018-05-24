@@ -23,4 +23,4 @@ angular
     ddo.templateUrl = 'js/directives/film-poster.html';
 
     return ddo;
-  })
+  });

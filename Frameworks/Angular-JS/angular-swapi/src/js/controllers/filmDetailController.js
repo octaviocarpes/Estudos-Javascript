@@ -1,7 +1,6 @@
 angular
   .module('main')
   .controller('filmDetailController', ($scope, imagesResource, $stateParams, filmsService) => {
-
     let movieid = $stateParams.movieid;
     let film = {};
     let image = {};
@@ -9,6 +8,7 @@ angular
     filmsService
       .async()
       .then(response => {
+        document.querySelector('.page-box').classList.remove('hidden');
         document.querySelector('.pre-loader').classList.add('hidden');
         filmsService.films = response.data.results;
 
