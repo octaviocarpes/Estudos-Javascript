@@ -13,7 +13,6 @@ angular
         }
 
         $scope.films = films;
-        document.querySelector('.progress').classList.add('hidden');
       })
       .catch(response => {
         console.log(response);

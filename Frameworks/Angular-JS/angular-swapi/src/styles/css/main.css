@@ -1,15 +1,17 @@
-body{
-    background-image: url('../img/stars-bg.jpg');
-    color: white;
-    width: 80%;
+html{
+    height: 100%;
 }
 
-.nav-logo{
-    width: 150px;
-    height: 150px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,0);
+body{
+    background-attachment: fixed;
+    background-image: url('../img/stars-bg.jpg');
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand{
+    padding:10px;
 }
 
 .user-view{
@@ -21,9 +23,7 @@ body{
 }
 
 .view{
-    position: relative;
-    left: 310px;
-    width: 100%;
+    
 }
 
 .mdc-card{
@@ -31,13 +31,31 @@ body{
     height: 250px;
 }
 
-.progress{
+.loader, .pre-loader{
     position: absolute;
-    left: 50%;
-    top:0;
-    transform: translate(-50%, 0);
+    left: 90%;
+    bottom: 25px;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+.pre-loader p{
+    position: relative;
+    right: 40px;
+    bottom: 15px;
 }
 
 .hidden{
     display: none;
+}
+
+.home-img{
+    width: 670px;
+}
+
+.home-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

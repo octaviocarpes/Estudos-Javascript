@@ -30,6 +30,14 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
+        test: /\.(sass|scss)$/,
+        use: [
+          'style-loader',
+          'css-loader', 
+          'sass-loader' 
+        ],
+      },
+      {
         test: /\.(png|jpg|gif|ico)$/,
         use: [
           {
@@ -41,7 +49,7 @@ module.exports = {
     ]
   },
   entry: {
-    vendors: ['jquery', 'angular', 'angular-resource', '@uirouter/angularjs', 'materialize-css'],
+    vendors: ['jquery', 'angular', 'angular-resource', '@uirouter/angularjs', 'bulma'],
     bundle: './src/index.js'
   },
   output: {
@@ -50,7 +58,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'src'),
-    port: 9000,
+    port: 9000
   },
   plugins: [
     new HtmlWebpackPlugin({

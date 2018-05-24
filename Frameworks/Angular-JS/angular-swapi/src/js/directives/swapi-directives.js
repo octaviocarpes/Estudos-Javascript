@@ -1,18 +1,13 @@
 angular
   .module('directives', [])
-  .directive('filmCard', () => {
+  .directive('navBar', () => {
     let ddo = {};
 
     ddo.restrict = 'AE';
 
-    ddo.scope = {
-      title: '@',
-      image: '@',
-      crawl: '@',
-      movieid: '@'
-    };
+    ddo.scope = {};
 
-    ddo.templateUrl = 'js/directives/film-card.html';
+    ddo.templateUrl = 'js/directives/nav-bar.html';
 
     return ddo;
   })
@@ -28,4 +23,4 @@ angular
     ddo.templateUrl = 'js/directives/film-poster.html';
 
     return ddo;
-  });
+  })

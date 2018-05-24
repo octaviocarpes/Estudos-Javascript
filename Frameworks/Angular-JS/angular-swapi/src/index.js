@@ -1,4 +1,5 @@
-require('../node_modules/materialize-css/dist/css/materialize.min.css');
+require('../node_modules/bulma/css/bulma.min.css');
+require('../node_modules/bulma/bulma.sass');
 require('./styles/css/main.css');
 require('./styles/css/films.css');
 require('./styles/css/details.css');
@@ -12,12 +13,7 @@ angular.module('main', ['ui.router', 'directives', 'services', 'filmsService']).
       .state({
         url: '/',
         name: 'home',
-        template: require('./pages/films.html')
-      })
-      .state({
-        url: '/films',
-        name: 'films',
-        template: require('./pages/films.html')
+        template: require('./pages/home.html')
       })
       .state({
         url: '/details/?{movieid}',

@@ -13,30 +13,16 @@
 </head>
 
 <body ng-app="main">
-    <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li>
-            <div class="user-view">
-                <img class="user-view-logo" src="./styles/img/star-wars-logo.png">
-            </div>
-        </li>
-        <li>
-            <a class="waves-effect" ui-sref="films">Films</a>
-        </li>
-        <li>
-            <a class="waves-effect" ui-sref="characters">Characters</a>
-        </li>
-        <li>
-            <a class="waves-effect" ui-sref="planets">Planets</a>
-        </li>
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
-        <i class="material-icons">menu</i>
-    </a>
-
+    <nav-bar></nav-bar>
     <div class="view" ui-view></div>
-    <div class="progress yellow">
-        <div class="indeterminate orange darken-4"></div>
+    <div class="pre-loader hidden">
+        <p>Loading...</p>
+        <div class="loader"></div>
     </div>
+    <script>
+        function showLoader() {
+            document.querySelector('.pre-loader').classList.remove('hidden');
+        }</script>
 </body>
 
 </html>
