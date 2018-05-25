@@ -1,14 +1,81 @@
 <div ng-controller="filmDetailController">
-    <div class="box page-box hidden">
-        <div class="side-bar">
-            <h1 class="title is-1">{{film.title}}</h1>
-            <film-poster image="{{film.imageUrl}}"></film-poster>
-        </div>
-        <div class="film-content">
-            <div class="tile is-ancestor">
-                <p class="title is-ancestor">Opening Crawl:</p>
-                <p>{{film.opening_crawl}}</p>
+    <div class="page-content">
+        <div class="box page-box hidden">
+            <div class="columns is-gapless">
+                <div class="column is-one-third">
+                    <div class="side-bar">
+                        <h1 class="title is-4">{{film.title}}</h1>
+                        <film-poster image="{{film.imageUrl}}"></film-poster>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="film-content">
+                        <content>
+                            <p class="title is-ancestor">
+                                Opening Crawl:
+                                <article class="">
+                                    {{film.opening_crawl}}
+                                </article>
+                            </p>
+                        </content>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <article class="tile is-child notification is-warning">
+                                <p class="title">Director</p>
+                                <p class="subtitle has-text-centered">{{film.director}}</p>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile is-child notification is-warning">
+                                <p class="title">Producer</p>
+                                <p class="subtitle has-text-centered">{{film.producer}}</p>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile is-child notification is-warning">
+                                <p class="title">Release Date</p>
+                                <p class="subtitle has-text-centered">{{film.release_date}}</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column" onclick="openQuickView()">
+                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.characters.length}}">
+                                <p class="title is-5">Characters</p>
+                                <img src="../styles/img/icons/Darth-Vader-icon.png" alt="" class="image is-96x96">
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.species.length}}">
+                                <p class="title is-5">Species</p>
+                                <img src="../styles/img/icons/Chewbacca-icon.png" alt="" class="image is-96x96">
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.planets.length}}">
+                                <p class="title is-5">Planets</p>
+                                <img src="../styles/img/icons/Death-Star-icon.png" alt="" class="image is-96x96">
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.starships.length}}">
+                                <p class="title is-5">Starships</p>
+                                <img src="../styles/img/icons/Millennium-Falcon-icon.png" alt="" class="image is-96x96">
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.vehicles.length}}">
+                                <p class="title is-5">Vehicles</p>
+                                <img src="../styles/img/icons/AT-AT-Walker-512.png" alt="" class="image is-96x96">
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+<div ng-controller="quickViewController">
+    <quick-view></quick-view>
 </div>

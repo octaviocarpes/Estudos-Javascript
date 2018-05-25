@@ -1,34 +1,49 @@
-.detail-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.detail-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.side-poster{
-    width: 400px;
-    height: 600px;
+.side-poster {
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
 }
 
-.collapsible-header{
-    width: 100%;
+.collapsible-header {
+  width: 100%;
 }
 
-.collapsible-body{
-    width: 100%;
+.collapsible-body {
+  width: 100%;
 }
 
-.nav{
-    position: relative;
-    top: 0;
+.nav {
+  position: relative;
+  top: 0;
 }
 
-.film-info{
-    width: 75%;
+.film-info {
+  width: 75%;
 }
 
-.page-box{
-    position: relative;
-    top: 25px;
-    left: 5%;
-    width: 90%;
+.page-box {
+  position: relative;
+  top: 25px;
+  left: 5%;
+  width: 90%;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.quick-view-box {
+  position: absolute;
+  width: 300px;
+  height: 90%;
+  top: 85px;
+  left: 92%;
+  transform: translate(-50%, 0);
 }

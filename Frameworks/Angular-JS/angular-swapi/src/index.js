@@ -1,5 +1,8 @@
 require('../node_modules/bulma/css/bulma.min.css');
 require('../node_modules/bulma/bulma.sass');
+require('../node_modules/bulma-extensions/dist/bulma-extensions.min.css');
+require('../node_modules/bulma-extensions/bulma-quickview/dist/bulma-quickview.js');
+require('../node_modules/bulma-extensions/bulma-quickview/dist/bulma-quickview.min.css');
 require('./styles/css/main.css');
 require('./styles/css/films.css');
 require('./styles/css/details.css');
@@ -32,9 +35,14 @@ angular.module('main', ['ui.router', 'directives', 'services', 'filmsService']).
       });
   }
 ]);
+require('./js/app.js');
 
 require('./js/directives/swapi-directives.js');
 require('./js/services/swapi-service.js');
+
 require('./js/services/films-service.js');
 require('./js/controllers/filmsController.js');
+
 require('./js/controllers/filmDetailController.js');
+
+require('./js/controllers/quickViewController.js');
