@@ -41,8 +41,6 @@ require('./js/directives/swapi-directives.js');
 require('./js/services/swapi-service.js');
 
 require('./js/services/films-service.js');
-require('./js/controllers/filmsController.js');
+require('./js/controllers/films-controller.js');
 
-require('./js/controllers/filmDetailController.js');
-
-require('./js/controllers/quickViewController.js');
+require('./js/controllers/film-detail-controller.js');

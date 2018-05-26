@@ -2,11 +2,6 @@
   margin-top: 15px;
 }
 
-.film-data:hover {
-  background-color: hsl(171, 100%, 41%);
-  cursor: pointer;
-}
-
 .quick-view-box-header {
   display: flex;
   flex-direction: row;

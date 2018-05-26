@@ -27,6 +27,17 @@
   width: 75%;
 }
 
+.film-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.film-data:hover {
+  background-color: hsl(171, 100%, 41%);
+  cursor: pointer;
+}
+
 .page-box {
   position: relative;
   top: 25px;

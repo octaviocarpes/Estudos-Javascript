@@ -24,16 +24,17 @@ angular
 
     return ddo;
   })
-  .directive('quickView', () => {
+  .directive('infoSquare', () => {
     let ddo = {};
 
     ddo.restrict = 'AE';
 
     ddo.scope = {
-      header: '@'
+      icon: '@',
+      title: '@'
     };
 
-    ddo.templateUrl = 'js/directives/quick-view.html';
+    ddo.templateUrl = 'js/directives/info-square.html';
 
     return ddo;
   });

@@ -21,26 +21,6 @@
                     </div>
                     <div class="columns">
                         <div class="column">
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">Director</p>
-                                <p class="subtitle has-text-centered">{{film.director}}</p>
-                            </article>
-                        </div>
-                        <div class="column">
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">Producer</p>
-                                <p class="subtitle has-text-centered">{{film.producer}}</p>
-                            </article>
-                        </div>
-                        <div class="column">
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">Release Date</p>
-                                <p class="subtitle has-text-centered">{{film.release_date}}</p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column" onclick="openQuickView()">
                             <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.characters.length}}">
                                 <p class="title is-5">Characters</p>
                                 <img src="../styles/img/icons/Darth-Vader-icon.png" alt="" class="image is-96x96">
@@ -71,11 +51,28 @@
                             </article>
                         </div>
                     </div>
+                    <div class="columns">
+                        <div class="column">
+                            <article class="tile is-child notification is-warning">
+                                <p class="title is-5">Director</p>
+                                <p class="subtitle has-text-centered">{{film.director}}</p>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile is-child notification is-warning">
+                                <p class="title is-5">Producer</p>
+                                <p class="subtitle has-text-centered">{{film.producer}}</p>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile is-child notification is-warning">
+                                <p class="title is-5">Release Date</p>
+                                <p class="subtitle has-text-centered">{{film.release_date}}</p>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div ng-controller="quickViewController">
-    <quick-view></quick-view>
 </div>
