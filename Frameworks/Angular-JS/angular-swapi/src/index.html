@@ -14,7 +14,7 @@
 
 <body ng-app="main">
     <nav-bar></nav-bar>
-    <div class="view" ui-view></div>
+    <div class="view" ng-controller="mainController" ui-view></div>
     <div class="pre-loader hidden">
         <p>Loading...</p>
         <div class="loader"></div>

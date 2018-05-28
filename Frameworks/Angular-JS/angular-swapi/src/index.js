@@ -8,7 +8,7 @@ require('./styles/css/films.css');
 require('./styles/css/details.css');
 
 angular
-  .module('main', ['ui.router', 'directives', 'services', 'filmsService', 'charactersService'])
+  .module('main', ['ui.router', 'directives', 'services', 'filmsService', 'charactersService', 'planetsService', 'speciesService', 'starshipsService', 'vehiclesService'])
   .config([
     '$stateProvider',
     '$locationProvider',
@@ -45,11 +45,19 @@ require('./js/app.js');
 require('./js/directives/swapi-directives.js');
 
 // Controllers
+require('./js/controllers/main-controller.js');
+require('./js/controllers/characters-controller.js');
 require('./js/controllers/films-controller.js');
-require('./js/controllers/film-detail-controller.js');
-require('./js/controllers/data-controller.js');
+require('./js/controllers/planets-controller.js');
+require('./js/controllers/species-controller.js');
+require('./js/controllers/starships-controller.js');
+require('./js/controllers/vehicles-controller.js');
 
 // Services
 require('./js/services/swapi-service.js');
 require('./js/services/films-service.js');
 require('./js/services/characters-service.js');
+require('./js/services/planets-service.js');
+require('./js/services/species-service.js');
+require('./js/services/starships-service.js');
+require('./js/services/vehicles-service.js');

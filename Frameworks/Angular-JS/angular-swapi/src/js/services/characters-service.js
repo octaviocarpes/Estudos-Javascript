@@ -1,8 +1,9 @@
 angular.module('charactersService', []).factory('charactersService', $http => {
-
+  let characters = [];
   return {
-    getAll: (url) => {
+    async: (url) => {
       return $http.get(url);
-    }
+    },
+    characters
   };
 });
