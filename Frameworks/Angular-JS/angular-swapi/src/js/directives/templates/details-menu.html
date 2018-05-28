@@ -1,0 +1,42 @@
+<div>
+    <aside class="menu">
+        <ul class="menu-list">
+            <li>
+                <p class="menu-label">Film Features:</p>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <a class="is-active" ng-click="header = title.characters">
+                            <img src="../styles/img/icons/Darth-Vader-icon.png" alt="" class="image is-24x24">
+                            <p ng-model="title.characters"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" ng-click="setHeader(title.species)">
+                            <img src="../styles/img/icons/Chewbacca-icon.png" alt="" class="image is-24x24">
+                            <p>{{title.species}}</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" ng-click="setHeader(title.planets)">
+                            <img src="../styles/img/icons/Death-Star-icon.png" alt="" class="image is-24x24">
+                            <p>{{title.planets}}</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" ng-click="setHeader(title.starships)">
+                            <img src="../styles/img/icons/Millennium-Falcon-icon.png" alt="" class="image is-24x24">
+                            <p>{{title.starships}}</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" ng-click="setHeader(title.vehicles)">
+                            <img src="../styles/img/icons/AT-AT-Walker-512.png" alt="" class="image is-24x24">
+                            <p>{{title.vehicles}}</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    </aside>
+</div>
