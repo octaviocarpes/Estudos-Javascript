@@ -19,36 +19,62 @@
                             </p>
                         </content>
                     </div>
-                    <div class="columns">
-                        <div class="column">
-                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.characters.length}}">
-                                <p class="title is-5">Characters</p>
-                                <img src="../styles/img/icons/Darth-Vader-icon.png" alt="" class="image is-96x96">
-                            </article>
+                    <div class="columns" ng-controller="dataController">
+                        <div class="column is-one-quarter">
+                            <div>
+                                <aside class="menu">
+                                    <ul class="menu-list">
+                                        <li>
+                                            <p class="menu-label">Film Features:</p>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a id="Characters" class="menu-item is-active" ng-click="setContent(title.characters, film.characters)">
+                                                        <img src="../styles/img/icons/Darth-Vader-icon.png" alt="" class="image is-24x24">
+                                                        <p>{{title.characters}}</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="Species" class="menu-item species" ng-click="setContent(title.species, film.species)">
+                                                        <img src="../styles/img/icons/Chewbacca-icon.png" alt="" class="image is-24x24">
+                                                        <p>{{title.species}}</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="Planets" class="menu-item" ng-click="setContent(title.planets, film.planets)">
+                                                        <img src="../styles/img/icons/Death-Star-icon.png" alt="" class="image is-24x24">
+                                                        <p>{{title.planets}}</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="Starships" class="menu-item" ng-click="setContent(title.starships, film.starships)">
+                                                        <img src="../styles/img/icons/Millennium-Falcon-icon.png" alt="" class="image is-24x24">
+                                                        <p>{{title.starships}}</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="Vehicles" class="menu-item" ng-click="setContent(title.vehicles, film.vehicles)">
+                                                        <img src="../styles/img/icons/AT-AT-Walker-512.png" alt="" class="image is-24x24">
+                                                        <p>{{title.vehicles}}</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                </aside>
+                            </div>
                         </div>
                         <div class="column">
-                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.species.length}}">
-                                <p class="title is-5">Species</p>
-                                <img src="../styles/img/icons/Chewbacca-icon.png" alt="" class="image is-96x96">
-                            </article>
-                        </div>
-                        <div class="column">
-                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.planets.length}}">
-                                <p class="title is-5">Planets</p>
-                                <img src="../styles/img/icons/Death-Star-icon.png" alt="" class="image is-96x96">
-                            </article>
-                        </div>
-                        <div class="column">
-                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.starships.length}}">
-                                <p class="title is-5">Starships</p>
-                                <img src="../styles/img/icons/Millennium-Falcon-icon.png" alt="" class="image is-96x96">
-                            </article>
-                        </div>
-                        <div class="column">
-                            <article class="tile is-child notification is-warning tooltip is-tooltip-top film-data" data-tooltip="{{film.vehicles.length}}">
-                                <p class="title is-5">Vehicles</p>
-                                <img src="../styles/img/icons/AT-AT-Walker-512.png" alt="" class="image is-96x96">
-                            </article>
+                            <div class="message-box">
+                                <article class="message is-link">
+                                    <div class="message-header">
+                                        <p>{{header.value}}</p>
+                                    </div>
+                                    <div class="message-body">
+                                        {{content}}
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                     <div class="columns">

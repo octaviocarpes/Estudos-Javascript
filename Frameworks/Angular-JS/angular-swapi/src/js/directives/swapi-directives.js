@@ -7,7 +7,7 @@ angular
 
     ddo.scope = {};
 
-    ddo.templateUrl = 'js/directives/nav-bar.html';
+    ddo.templateUrl = 'js/directives/templates/nav-bar.html';
 
     return ddo;
   })
@@ -20,21 +20,29 @@ angular
       image: '@'
     };
 
-    ddo.templateUrl = 'js/directives/film-poster.html';
+    ddo.templateUrl = 'js/directives/templates/film-poster.html';
 
     return ddo;
   })
-  .directive('infoSquare', () => {
+  .directive('detailsMenu', () => {
     let ddo = {};
 
     ddo.restrict = 'AE';
 
-    ddo.scope = {
-      icon: '@',
-      title: '@'
-    };
+    ddo.scope = {};
+    ddo.replace = true;
+    ddo.templateUrl = 'js/directives/templates/details-menu.html';
 
-    ddo.templateUrl = 'js/directives/info-square.html';
+    return ddo;
+  })
+  .directive('detailsData', () => {
+    let ddo = {};
+
+    ddo.restrict = 'AE';
+    controller = dataController;
+    ddo.scope = {};
+    ddo.replace = true;
+    ddo.templateUrl = 'js/directives/templates/details-data.html';
 
     return ddo;
   });

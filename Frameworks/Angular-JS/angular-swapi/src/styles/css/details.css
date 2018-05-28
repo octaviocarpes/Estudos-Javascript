@@ -58,3 +58,20 @@
   left: 92%;
   transform: translate(-50%, 0);
 }
+
+/* .menu {
+  margin-top: 50px;
+} */
+
+.menu-list a {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-list p {
+  margin-left: 15px;
+}
+
+.is-active {
+  background-color: hsl(48, 100%, 67%);
+}

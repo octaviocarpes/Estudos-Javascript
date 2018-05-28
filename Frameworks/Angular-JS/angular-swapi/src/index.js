@@ -35,12 +35,18 @@ angular.module('main', ['ui.router', 'directives', 'services', 'filmsService']).
       });
   }
 ]);
+
+// Javascript
 require('./js/app.js');
 
+// Directives
 require('./js/directives/swapi-directives.js');
-require('./js/services/swapi-service.js');
 
-require('./js/services/films-service.js');
+// Controllers
 require('./js/controllers/films-controller.js');
-
 require('./js/controllers/film-detail-controller.js');
+require('./js/controllers/data-controller.js');
+
+// Services
+require('./js/services/swapi-service.js');
+require('./js/services/films-service.js');
