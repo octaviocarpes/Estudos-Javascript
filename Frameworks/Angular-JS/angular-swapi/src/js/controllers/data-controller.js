@@ -1,4 +1,4 @@
-angular.module('main').controller('dataController', $scope => {
+angular.module('main').controller('dataController', ($scope, charactersService) => {
   $scope.title = {
     characters: 'Characters',
     species: 'Species',
@@ -11,17 +11,30 @@ angular.module('main').controller('dataController', $scope => {
     value: 'Characters'
   };
 
-  $scope.content = {
-    value: ''
-  };
+  let contentArray = [];
 
   $scope.setContent = function(headerTitle, dataContent) {
+    contentArray = [];
     $scope.header.value = headerTitle;
+    $scope.content = '';
+    document.querySelector('.message-box').classList.remove('hidden');
+
     let items = document.querySelectorAll('.menu-item');
     items.forEach(element => {
       element.classList.remove('is-active');
     });
     document.getElementById(headerTitle).classList.add('is-active');
-    $scope.content = dataContent;
+    for(let i = 0; i < dataContent.length; i++){
+      charactersService
+      .getAll(dataContent[i])
+      .then(response => {
+        contentArray.push(response.data.name);
+        $scope.content = contentArray;
+      })
+      .catch(response => {
+        console.log(response);
+      });
+    }
   };
+
 });

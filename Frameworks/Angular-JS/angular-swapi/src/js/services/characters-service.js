@@ -1,5 +1,8 @@
-angular.module('charactersService', []).factory('characterService', $http => {
-  let charactersUrl = '';
+angular.module('charactersService', []).factory('charactersService', $http => {
 
-  return {};
+  return {
+    getAll: (url) => {
+      return $http.get(url);
+    }
+  };
 });

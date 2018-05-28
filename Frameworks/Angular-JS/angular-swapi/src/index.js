@@ -7,34 +7,36 @@ require('./styles/css/main.css');
 require('./styles/css/films.css');
 require('./styles/css/details.css');
 
-angular.module('main', ['ui.router', 'directives', 'services', 'filmsService']).config([
-  '$stateProvider',
-  '$locationProvider',
-  function($stateProvider, $locationProvider) {
-    $locationProvider.html5Mode(true);
-    $stateProvider
-      .state({
-        url: '/',
-        name: 'home',
-        template: require('./pages/home.html')
-      })
-      .state({
-        url: '/details/?{movieid}',
-        name: 'details',
-        template: require('./pages/film-info.html')
-      })
-      .state({
-        url: '/characters',
-        name: 'characters',
-        template: require('./pages/characters.html')
-      })
-      .state({
-        url: '/planets',
-        name: 'planets',
-        template: require('./pages/planets.html')
-      });
-  }
-]);
+angular
+  .module('main', ['ui.router', 'directives', 'services', 'filmsService', 'charactersService'])
+  .config([
+    '$stateProvider',
+    '$locationProvider',
+    function($stateProvider, $locationProvider) {
+      $locationProvider.html5Mode(true);
+      $stateProvider
+        .state({
+          url: '/',
+          name: 'home',
+          template: require('./pages/home.html')
+        })
+        .state({
+          url: '/details/?{movieid}',
+          name: 'details',
+          template: require('./pages/film-info.html')
+        })
+        .state({
+          url: '/characters',
+          name: 'characters',
+          template: require('./pages/characters.html')
+        })
+        .state({
+          url: '/planets',
+          name: 'planets',
+          template: require('./pages/planets.html')
+        });
+    }
+  ]);
 
 // Javascript
 require('./js/app.js');
@@ -50,3 +52,4 @@ require('./js/controllers/data-controller.js');
 // Services
 require('./js/services/swapi-service.js');
 require('./js/services/films-service.js');
+require('./js/services/characters-service.js');

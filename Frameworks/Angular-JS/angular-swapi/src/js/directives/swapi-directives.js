@@ -24,25 +24,25 @@ angular
 
     return ddo;
   })
+  .directive('detailsData', () => {
+    let ddo = {};
+
+    ddo.restrict = 'AE';
+
+    ddo.controller = 'dataController';
+
+    ddo.templateUrl = 'js/directives/templates/details-data.html';
+
+    return ddo;
+  })
   .directive('detailsMenu', () => {
     let ddo = {};
 
     ddo.restrict = 'AE';
 
-    ddo.scope = {};
-    ddo.replace = true;
+    ddo.controller = 'dataController';
+
     ddo.templateUrl = 'js/directives/templates/details-menu.html';
-
-    return ddo;
-  })
-  .directive('detailsData', () => {
-    let ddo = {};
-
-    ddo.restrict = 'AE';
-    controller = dataController;
-    ddo.scope = {};
-    ddo.replace = true;
-    ddo.templateUrl = 'js/directives/templates/details-data.html';
 
     return ddo;
   });
