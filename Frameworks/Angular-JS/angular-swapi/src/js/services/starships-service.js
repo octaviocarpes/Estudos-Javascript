@@ -1,8 +1,7 @@
 angular.module('starshipsService', []).factory('starshipsService', $http => {
-    return {
-      getAll: url => {
-        return $http.get(url);
-      }
-    };
-  });
-  
+  return {
+    getAll: url => {
+      return $http.get(url);
+    }
+  };
+});

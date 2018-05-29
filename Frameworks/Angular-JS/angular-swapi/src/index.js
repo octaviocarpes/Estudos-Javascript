@@ -8,7 +8,17 @@ require('./styles/css/films.css');
 require('./styles/css/details.css');
 
 angular
-  .module('main', ['ui.router', 'directives', 'services', 'filmsService', 'charactersService', 'planetsService', 'speciesService', 'starshipsService', 'vehiclesService'])
+  .module('main', [
+    'ui.router',
+    'directives',
+    'services',
+    'filmsService',
+    'charactersService',
+    'planetsService',
+    'speciesService',
+    'starshipsService',
+    'vehiclesService'
+  ])
   .config([
     '$stateProvider',
     '$locationProvider',

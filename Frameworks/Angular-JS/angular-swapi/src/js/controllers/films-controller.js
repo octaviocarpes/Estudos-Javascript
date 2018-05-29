@@ -1,6 +1,12 @@
 angular
   .module('main')
-  .controller('filmsController', function($scope, imagesResource, filmsService, charactersService, $stateParams) {
+  .controller('filmsController', function(
+    $scope,
+    imagesResource,
+    filmsService,
+    charactersService,
+    $stateParams
+  ) {
     $scope.images = imagesResource.images;
     let films = [];
     let movieid = $stateParams.movieid;
@@ -20,19 +26,17 @@ angular
         $scope.films = films;
 
         films.forEach(element => {
-          if(element.episode_id == movieid){
+          if (element.episode_id == movieid) {
             console.log(element);
             $scope.film = element;
           }
         });
 
         $scope.film.characters.forEach(element => {
-          charactersService
-          .async(element)
-          .then(response => {
+          charactersService.async(element).then(response => {
             filmCharacters.push(response.data.name);
             $scope.characters = filmCharacters;
-          })
+          });
         });
 
         document.querySelector('.page-box').classList.remove('hidden');

@@ -29,7 +29,6 @@ angular
 
     ddo.restrict = 'AE';
 
-
     ddo.templateUrl = 'js/directives/templates/details-data.html';
 
     return ddo;
@@ -38,7 +37,6 @@ angular
     let ddo = {};
 
     ddo.restrict = 'AE';
-
 
     ddo.templateUrl = 'js/directives/templates/details-menu.html';
 
