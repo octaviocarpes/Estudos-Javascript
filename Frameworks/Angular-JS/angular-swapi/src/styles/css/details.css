@@ -59,13 +59,12 @@
   transform: translate(-50%, 0);
 }
 
-/* .menu {
-  margin-top: 50px;
-} */
-
 .menu-list a {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+  margin-bottom: 5px;
 }
 
 .menu-list p {
@@ -74,4 +73,26 @@
 
 .is-active {
   background-color: hsl(48, 100%, 67%);
+}
+
+.message-box {
+  margin-top: 20px;
+  width: 105%;
+  position: relative;
+  right: 45px;
+}
+
+.message-body {
+  height: 300px;
+  overflow: auto;
+}
+
+.message-body-text {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.film-info-footer {
+  position: relative;
+  top: 15px;
 }
