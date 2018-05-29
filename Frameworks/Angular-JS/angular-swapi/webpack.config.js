@@ -50,7 +50,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: __dirname + '/tmp'
+    path: __dirname + '/dist'
   },
   devServer: {
     contentBase: path.join(__dirname, 'src'),

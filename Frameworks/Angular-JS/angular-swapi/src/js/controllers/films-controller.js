@@ -1,4 +1,4 @@
-import { concatAll } from "rxjs/operator/concatAll";
+import { concatAll } from 'rxjs/operator/concatAll';
 
 angular
   .module('main')
@@ -32,7 +32,7 @@ angular
     let filmVehicles = [];
 
     filmsService
-      .async()
+      .getAll()
       .then(response => {
         films = response.data.results;
         for (let i = 0; i < response.data.results.length; i++) {
@@ -73,7 +73,7 @@ angular
       document.getElementById(id).classList.add('is-focused');
     };
 
-    function callSWAPIforCharacters(){
+    function callSWAPIforCharacters() {
       $scope.film.characters.forEach(element => {
         charactersService.getAll(element).then(response => {
           filmCharacters.push(response.data.name);
@@ -85,7 +85,7 @@ angular
       });
     }
 
-    function callSWAPIforSpecies(){
+    function callSWAPIforSpecies() {
       $scope.film.species.forEach(element => {
         speciesService.getAll(element).then(response => {
           filmSpecies.push(response.data.name);
@@ -97,7 +97,7 @@ angular
       });
     }
 
-    function callSWAPIforPlanets(){
+    function callSWAPIforPlanets() {
       $scope.film.planets.forEach(element => {
         planetsService.getAll(element).then(response => {
           filmPlanets.push(response.data.name);
@@ -109,32 +109,31 @@ angular
       });
     }
 
-    function callSWAPIforStarships(){
+    function callSWAPIforStarships() {
       $scope.film.starships.forEach(element => {
         starshipsService.getAll(element).then(response => {
           filmStarships.push(response.data.name);
-          if ($scope.film.starships.length == filmStarships.length){
+          if ($scope.film.starships.length == filmStarships.length) {
             $scope.starships = filmStarships;
             document.getElementById('starships').classList.remove('is-loading');
           }
-        })
+        });
       });
     }
 
-    function callSWAPIforVehicles(){
-      if ($scope.film.vehicles.length == 0){
+    function callSWAPIforVehicles() {
+      if ($scope.film.vehicles.length == 0) {
         document.getElementById('vehicles').classList.remove('is-loading');
         $scope.vehicles = ['There are no Vehicles data for this film.'];
       }
       $scope.film.vehicles.forEach(element => {
-        vehiclesService.getAll(element)
-        .then(response => {
+        vehiclesService.getAll(element).then(response => {
           filmVehicles.push(response.data.name);
-          if($scope.film.vehicles.length == filmVehicles.length){
+          if ($scope.film.vehicles.length == filmVehicles.length) {
             $scope.vehicles = filmVehicles;
             document.getElementById('vehicles').classList.remove('is-loading');
           }
-        })
+        });
       });
     }
   });
