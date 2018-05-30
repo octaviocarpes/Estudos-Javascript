@@ -23,7 +23,9 @@ module.exports = function(config) {
       './dist/vendors.js',
 
       './src/js/services/films-service.js',
-      './tests/services/films-service.spec.js'
+      './tests/services/films-service.spec.js',
+      './src/js/controllers/films-controller.js',
+      './tests/controllers/films-controller.spec.js'
     ],
 
 

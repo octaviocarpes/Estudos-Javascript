@@ -41,4 +41,28 @@ angular
     ddo.templateUrl = 'js/directives/templates/details-menu.html';
 
     return ddo;
-  });
+  })
+  .directive('searchBox', () => {
+    let ddo = {};
+
+    ddo.restrict = 'AE';
+
+    ddo.templateUrl = 'js/directives/templates/search-box.html';
+
+    return ddo;
+  })
+  .directive('characterCard', () => {
+    let ddo = {};
+
+    ddo.restrict = 'AE';
+
+    ddo.scope = {
+      image:'@',
+      name: '@',
+      url: '@'
+    }
+
+    ddo.templateUrl = 'js/directives/templates/character-card.html';
+
+    return ddo;
+  })

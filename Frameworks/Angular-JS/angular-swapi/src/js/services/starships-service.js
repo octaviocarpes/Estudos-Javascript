@@ -1,6 +1,6 @@
 angular.module('starshipsService', []).factory('starshipsService', $http => {
   return {
-    getAll: url => {
+    get: url => {
       return $http.get(url, { cache: true });
     }
   };

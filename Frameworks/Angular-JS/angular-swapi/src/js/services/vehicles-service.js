@@ -1,6 +1,6 @@
 angular.module('vehiclesService', []).factory('vehiclesService', $http => {
   return {
-    getAll: url => {
+    get: url => {
       return $http.get(url, { cache: true });
     }
   };

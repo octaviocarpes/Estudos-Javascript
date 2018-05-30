@@ -79,3 +79,20 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.home-button {
+  width: 115px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.home-button img {
+  margin-right: 10px;
+}
+
+.home-button:hover{
+  background-color: hsl(48, 100%, 67%);
+  color:black;
+}

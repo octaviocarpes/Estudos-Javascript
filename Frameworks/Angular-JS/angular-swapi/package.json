@@ -11,8 +11,9 @@
     "build": "webpack",
     "gulp": "gulp",
     "gulp-tasks": "gulp --tasks",
-    "format": "prettier --write './src/**/*.{js,jsx}'",
-    "karma": "karma"
+    "format": "prettier --write './src/**/*.{js,jsx}' && prettier --write './tests/**/*.spec.js'",
+    "karma": "karma",
+    "test": "jasmine"
   },
   "dependencies": {
     "@material/auto-init": "^0.35.0",

@@ -1,5 +1,3 @@
-import { concatAll } from 'rxjs/operator/concatAll';
-
 angular
   .module('main')
   .controller('filmsController', function(
@@ -13,7 +11,7 @@ angular
     vehiclesService,
     $stateParams
   ) {
-    $scope.images = imagesResource.images;
+    $scope.images = imagesResource.filmImages;
 
     $scope.title = {
       characters: 'Characters',
@@ -36,7 +34,7 @@ angular
       .then(response => {
         films = response.data.results;
         for (let i = 0; i < response.data.results.length; i++) {
-          films[i].imageUrl = imagesResource.images[i].url;
+          films[i].imageUrl = imagesResource.filmImages[i].url;
         }
         $scope.films = films;
 
@@ -75,7 +73,7 @@ angular
 
     function callSWAPIforCharacters() {
       $scope.film.characters.forEach(element => {
-        charactersService.getAll(element).then(response => {
+        charactersService.get(element).then(response => {
           filmCharacters.push(response.data.name);
           if ($scope.film.characters.length == filmCharacters.length) {
             $scope.characters = filmCharacters;
@@ -87,7 +85,7 @@ angular
 
     function callSWAPIforSpecies() {
       $scope.film.species.forEach(element => {
-        speciesService.getAll(element).then(response => {
+        speciesService.get(element).then(response => {
           filmSpecies.push(response.data.name);
           if ($scope.film.species.length == filmSpecies.length) {
             $scope.species = filmSpecies;
@@ -99,7 +97,7 @@ angular
 
     function callSWAPIforPlanets() {
       $scope.film.planets.forEach(element => {
-        planetsService.getAll(element).then(response => {
+        planetsService.get(element).then(response => {
           filmPlanets.push(response.data.name);
           if ($scope.film.planets.length == filmPlanets.length) {
             $scope.planets = filmPlanets;
@@ -111,7 +109,7 @@ angular
 
     function callSWAPIforStarships() {
       $scope.film.starships.forEach(element => {
-        starshipsService.getAll(element).then(response => {
+        starshipsService.get(element).then(response => {
           filmStarships.push(response.data.name);
           if ($scope.film.starships.length == filmStarships.length) {
             $scope.starships = filmStarships;
@@ -127,7 +125,7 @@ angular
         $scope.vehicles = ['There are no Vehicles data for this film.'];
       }
       $scope.film.vehicles.forEach(element => {
-        vehiclesService.getAll(element).then(response => {
+        vehiclesService.get(element).then(response => {
           filmVehicles.push(response.data.name);
           if ($scope.film.vehicles.length == filmVehicles.length) {
             $scope.vehicles = filmVehicles;

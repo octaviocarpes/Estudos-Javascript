@@ -6,6 +6,7 @@ require('../node_modules/bulma-extensions/bulma-quickview/dist/bulma-quickview.m
 require('./styles/css/main.css');
 require('./styles/css/films.css');
 require('./styles/css/details.css');
+require('./styles/css/characters.css');
 
 angular
   .module('main', [

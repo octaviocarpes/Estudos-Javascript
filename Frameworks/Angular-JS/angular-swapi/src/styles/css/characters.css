@@ -1,0 +1,13 @@
+.characters-box {
+    overflow: auto;
+    margin-top:15px;
+}
+
+.character-img {
+    width: 250px;
+    height: 180px;
+}
+
+.card {
+    width: 250px;
+}
