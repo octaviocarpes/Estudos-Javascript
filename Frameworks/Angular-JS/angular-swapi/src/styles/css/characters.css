@@ -1,13 +1,21 @@
 .characters-box {
-    overflow: auto;
-    margin-top:15px;
+  overflow: scroll;
+  margin-top: 15px;
+  height: 500px;
 }
 
 .character-img {
-    width: 250px;
-    height: 180px;
+  width: 200px;
+  height: 150px;
 }
 
 .card {
-    width: 250px;
+  width: 200px;
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

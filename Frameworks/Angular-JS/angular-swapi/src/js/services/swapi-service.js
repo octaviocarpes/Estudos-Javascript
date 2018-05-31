@@ -249,6 +249,134 @@ angular.module('services', []).factory('imagesResource', () => {
     url: '../styles/img/characters/Adi Gallia.jpeg',
     name: 'Adi Gallia'
   });
+  characterImages.push({
+    url: '../styles/img/characters/Saesee Tiin.jpeg',
+    name: 'Saesee Tiin'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Yarael Poof.jpg',
+    name: 'Yarael Poof'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Plo Koon.jpg',
+    name: 'Plo Koon'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Mas Amedda.jpeg',
+    name: 'Mas Amedda'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Gregar Typho.jpeg',
+    name: 'Gregar Typho'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Cordé.jpg',
+    name: 'Cordé'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Cliegg Lars.jpg',
+    name: 'Cliegg Lars'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Poggle the Lesser.jpg',
+    name: 'Poggle the Lesser'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Luminara Unduli.jpeg',
+    name: 'Luminara Unduli'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Barriss Offee.jpg',
+    name: 'Barriss Offee'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Dormé.jpg',
+    name: 'Dormé'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Dooku.jpg',
+    name: 'Dooku'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Bail Prestor Organa.jpg',
+    name: 'Bail Prestor Organa'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Jango Fett.jpg',
+    name: 'Jango Fett'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Zam Wesell.jpg',
+    name: 'Zam Wesell'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Dexter Jettster.jpg',
+    name: 'Dexter Jettster'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Lama Su.jpeg',
+    name: 'Lama Su'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Taun We.jpg',
+    name: 'Taun We'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Jocasta Nu.jpeg',
+    name: 'Jocasta Nu'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/R4-P17.jpeg',
+    name: 'R4-P17'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Wat Tambor.jpg',
+    name: 'Wat Tambor'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/San Hill.jpg',
+    name: 'San Hill'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Shaak Ti.jpg',
+    name: 'Shaak Ti'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Grievous.jpeg',
+    name: 'Grievous'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Tarfful.jpg',
+    name: 'Tarfful'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Raymus Antilles.jpg',
+    name: 'Raymus Antilles'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Sly Moore.jpeg',
+    name: 'Sly Moore'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Tion Medon.jpg',
+    name: 'Tion Medon'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Finn.jpg',
+    name: 'Finn'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Rey.jpg',
+    name: 'Rey'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/Poe Dameron.jpg',
+    name: 'Poe Dameron'
+  });
+  characterImages.push({
+    url: '../styles/img/characters/BB8.png',
+    name: 'BB8'
+  });
 
   let imagesResource = {
     filmImages,
