@@ -57,12 +57,12 @@ angular
     ddo.restrict = 'AE';
 
     ddo.scope = {
-      image:'@',
+      image: '@',
       name: '@',
       url: '@'
-    }
+    };
 
     ddo.templateUrl = 'js/directives/templates/character-card.html';
 
     return ddo;
-  })
+  });
