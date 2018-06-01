@@ -84,10 +84,19 @@
 
 .message-body {
   height: 300px;
+  width: 770px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .message-body-text {
   margin-right: 15px;
   margin-bottom: 5px;
+}
+
+.characters-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

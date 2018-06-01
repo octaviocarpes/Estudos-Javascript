@@ -11,6 +11,7 @@ require('./styles/css/characters.css');
 angular
   .module('main', [
     'ui.router',
+    'angular.filter',
     'directives',
     'services',
     'filmsService',
@@ -40,6 +41,11 @@ angular
           url: '/characters',
           name: 'characters',
           template: require('./pages/characters.html')
+        })
+        .state({
+          url: '/character/detail/?{characterId}',
+          name: 'character',
+          template: require('./pages/character-detail.html')
         })
         .state({
           url: '/planets',

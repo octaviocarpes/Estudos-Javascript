@@ -45,7 +45,14 @@ module.exports = {
     ]
   },
   entry: {
-    vendors: ['jquery', 'angular', 'angular-resource', '@uirouter/angularjs', 'bulma'],
+    vendors: [
+      'jquery',
+      'angular',
+      'angular-resource',
+      'angular-filter',
+      '@uirouter/angularjs',
+      'bulma'
+    ],
     bundle: './src/index.js'
   },
   output: {
