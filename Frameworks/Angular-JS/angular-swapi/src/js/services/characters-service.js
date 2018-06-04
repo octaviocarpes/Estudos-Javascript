@@ -5,7 +5,7 @@ angular.module('charactersService', []).factory('charactersService', $http => {
       return $http.get(url, { cache: true });
     },
     getAll: () => {
-      return $http.get('https://swapi.co/api/people', {cache:true});
+      return $http.get('https://swapi.co/api/people', { cache: true });
     },
     characters
   };

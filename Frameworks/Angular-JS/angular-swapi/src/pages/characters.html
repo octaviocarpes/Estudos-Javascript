@@ -3,12 +3,12 @@
         <div class="box page-box">
             <h1 class="title is-1">Characters</h1>
         </div>
-        <search-box></search-box>
-
         <div class="box page-box characters-box">
-            <div class="columns">
-                <div class="column" ng-repeat="data in characters">
-                    <character-card image="{{data.imageUrl}}" url="{{data.url}}" name="{{data.name}}"></character-card>
+            <div class="row" ng-repeat="info in characters track by $index" ng-if="$index % 6 == 0">
+                <div class="col-xs-3 letter-box" ng-repeat="i in [$index, $index + 1, $index + 2, $index + 3, $index + 4, $index + 5]" ng-if="characters[i] != null">
+                    <div>
+                        <character-card image="{{characters[i].imageUrl}}" url="{{characters[i].characterUrl}}" name="{{characters[i].name}}"></character-card>
+                    </div>
                 </div>
             </div>
         </div>

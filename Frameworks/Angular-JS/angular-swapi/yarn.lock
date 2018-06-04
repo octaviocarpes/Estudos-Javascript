@@ -715,6 +715,12 @@ amqplib@^0.5.2:
     readable-stream "1.x >=1.1.9"
     safe-buffer "^5.0.1"
 
+angular-filter@^0.5.17:
+  version "0.5.17"
+  resolved "https://registry.yarnpkg.com/angular-filter/-/angular-filter-0.5.17.tgz#60c0c7380fd45872cb8f10801cfe07e154062935"
+  dependencies:
+    angular "*"
+
 angular-mocks@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.7.0.tgz#4957aaf966b6fc36edd6ac381a60814f7c05de3f"
@@ -722,6 +728,10 @@ angular-mocks@^1.7.0:
 angular-resource@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.7.0.tgz#356f92cafd68ded59862d7af34ddf8c08ac414b4"
+
+angular@*:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.0.tgz#e45d679fc8d81040a4894c7ccc16a4e1ad0a9ca6"
 
 angular@^1.6.10:
   version "1.6.10"

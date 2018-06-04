@@ -1,0 +1,37 @@
+<div ng-controller="charactersController">
+    <div class="box page-box">
+        <h1 class="title is-3">{{character.name}}</h1>
+    </div>
+    <div class="box page-box">
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <img class="profile-pic" src="{{character.imageUrl}}" alt="Character Image">
+            </div>
+            <div class="column">
+                <ul>
+                    <li>
+                        <p>Height: {{character.height}}</p>
+                    </li>
+                    <li>
+                        <p>Mass: {{character.mass}}</p>
+                    </li>
+                    <li>
+                        <p>Hair Color: {{character.hair_color}}</p>
+                    </li>
+                    <li>
+                        <p>Eye Color: {{character.eye_color}}</p>
+                    </li>
+                    <li>
+                        <p>Birth Year: {{charater.birth_year}}</p>
+                    </li>
+                    <li>
+                        <p>Gender: {{character.gender}}</p>
+                    </li>
+                    <li>
+                        <p>Homeworld: {{}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

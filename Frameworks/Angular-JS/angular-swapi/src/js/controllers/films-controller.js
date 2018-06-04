@@ -1,3 +1,5 @@
+import { format } from 'path';
+
 angular
   .module('main')
   .controller('filmsController', function(
@@ -24,6 +26,7 @@ angular
     let films = [];
     let movieid = $stateParams.movieid;
     let filmCharacters = [];
+    let filmCharactersUrl = [];
     let filmSpecies = [];
     let filmPlanets = [];
     let filmStarships = [];
@@ -56,11 +59,12 @@ angular
         console.log(response);
       });
 
-    $scope.setContent = (title, content) => {
+    $scope.setContent = (title, content, contentUrl) => {
       $scope.content = {};
       $scope.content = {
         header: title,
-        data: content
+        data: content,
+        url: contentUrl
       };
       let id = title.toLowerCase();
       document.querySelector('.message-box').classList.remove('hidden');
@@ -75,12 +79,26 @@ angular
       $scope.film.characters.forEach(element => {
         charactersService.get(element).then(response => {
           filmCharacters.push(response.data.name);
+          let url = response.data.url;
+          let urlId = getIdFromUrl(url);
+          let finalUrl = formatCharacterUrl(urlId);
+          filmCharactersUrl.push(finalUrl);
           if ($scope.film.characters.length == filmCharacters.length) {
             $scope.characters = filmCharacters;
+            $scope.charactersUrl = filmCharactersUrl;
             document.getElementById('characters').classList.remove('is-loading');
           }
         });
       });
+    }
+
+    function getIdFromUrl(url) {
+      var thenum = url.replace(/^\D+/g, '');
+      return thenum.replace('/', '');
+    }
+
+    function formatCharacterUrl(urlId) {
+      return 'character({ characterId: ' + urlId + '})';
     }
 
     function callSWAPIforSpecies() {
